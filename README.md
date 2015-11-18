@@ -1,0 +1,11 @@
+## static HTTP server written with streamline.js
+
+This package is a simple static HTTP server written with streamline.js. 
+
+Detailed documentation may be provided later. See source code for details.
+
+## License
+
+MIT.
+
+This package uses code licensed by Sencha Inc under MIT License. See Copyright notice in [`lib/staticProvider.js`](lib/staticProvider.js)

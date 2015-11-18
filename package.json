@@ -1,0 +1,31 @@
+{
+  "name": "streamline-static",
+  "description": "static HTTP server written with streamline.js",
+  "version": "1.0.0",
+  "author": {
+    "name": "Sage X3"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Sage-ERP-X3/streamline-static.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sage-ERP-X3/streamline-static/issues"
+  },
+  "engines": {
+    "node": ">=0.10.8"
+  },
+  "dependencies": {
+    "streamline-runtime": "^1.0.15"
+  },
+  "devDependencies": {
+    "babel-plugin-streamline": "^1.0.8",
+    "streamline-helpers": "^1.0.0"
+  },
+  "scripts": {
+    "prepublish": "node build.js || nodejs build.js"
+  },
+  "readmeFilename": "README.md",
+  "homepage": "https://github.com/Sage-ERP-X3/streamline-static#readme"
+}
