@@ -8,4 +8,4 @@ Detailed documentation may be provided later. See source code for details.
 
 MIT.
 
-This package uses code licensed by Sencha Inc under MIT License. See Copyright notice in [`src/staticProvider.js`](src/staticProvider.js)
+This package uses code licensed by Sencha Inc under MIT License. See Copyright notice in [`src/staticProvider._js`](src/staticProvider._js)
