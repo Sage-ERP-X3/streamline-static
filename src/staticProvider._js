@@ -83,7 +83,7 @@ exports.staticProvider = function(options) {
 			filename = Path.join(roots[i], queryString.unescape(url.pathname));
 
 			// Index.html support
-			if (filename[filename.length - 1] === '/') {
+			if (filename[filename.length - 1] === Path.sep) {
 				filename += "index.html";
 			}
 
@@ -116,7 +116,7 @@ exports.staticProvider = function(options) {
 		};
 
 		if (endsWith(filename, '.EXE') || endsWith(filename, '.exe')) {
-			var basename = filename.split('\\');
+			var basename = filename.split(Path.sep);
 			headers["content-disposition"] = "attachment; filename=\"" + basename[basename.length - 1];
 		}
 

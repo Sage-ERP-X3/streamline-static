@@ -1,7 +1,7 @@
 {
   "name": "streamline-static",
   "description": "static HTTP server written with streamline.js",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "author": {
     "name": "Sage X3"
   },
