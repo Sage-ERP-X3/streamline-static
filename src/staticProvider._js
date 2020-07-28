@@ -65,7 +65,8 @@ exports.staticProvider = function(options) {
 			cacheKey = opts ? opts.cachePrefix + req.url : req.url;
 
 		// Potentially malicious path
-		if (~url.pathname.indexOf('..')) {
+		var pathname = queryString.unescape(url.pathname);
+		if (~pathname.indexOf('..')) {
 			forbidden(res);
 			return true;
 		}
@@ -80,7 +81,7 @@ exports.staticProvider = function(options) {
 		var stat;
 		for (var i = 0; !stat && i < roots.length; i++) {
 			// Absolute path
-			filename = Path.join(roots[i], queryString.unescape(url.pathname));
+			filename = Path.join(roots[i], pathname);
 
 			// Index.html support
 			if (filename[filename.length - 1] === Path.sep) {
